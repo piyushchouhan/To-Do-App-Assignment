@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller.js';
 import { AppService } from './app.service.js';
 import { TodoModule } from './todo/todo.module.js';
+import { HealthModule } from './health/health.module.js';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { TodoModule } from './todo/todo.module.js';
       }),
     }),
     TodoModule,
+    HealthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -17,4 +17,8 @@ export const MESSAGE = {
       DELETING: 'Error while deleting todo',
     },
   },
+  HEALTH: {
+    OK: 'Service is healthy',
+    DEGRADED: 'Service is running but the database is not connected',
+  },
 } as const;
